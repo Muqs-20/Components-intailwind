@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap → Tailwind Component Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-200 min-h-screen">
+
+
+
+    <!--Cards -->
+    <br><br>
+    <!--Cards with Images and text-->
+    <h2 class="text-lg font-semibold mb-2 mx-12">Cards</h2>
+    <div class="mx-12 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img class="w-full h-88 object-cover" src="assets/images/1.jpg" alt="Card Image">
+            <div class="p-4">
+                <h3 class="text-lg font-semibold mb-2">Card Title 1</h3>
+                <p class="text-gray-600 mb-4">This is a brief description of the card content.</p>
+                <button class="px-4 py-2 rounded-md font-medium bg-blue-600 text-white hover:bg-blue-700 transition">Read More</button>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img class="w-full h-88 object-cover" src="assets/images/2.jpg" alt="Card Image">
+            <div class="p-4">
+                <h3 class="text-lg font-semibold mb-2">Card Title 2</h3>
+                <p class="text-gray-600 mb-4">This is a brief description of the card content.</p>
+                <button class="px-4 py-2 rounded-md font-medium bg-blue-600 text-white hover:bg-blue-700 transition">Read More</button>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img class="w-full h-88 object-cover" src="assets/images/3.jpg" alt="Card Image">
+            <div class="p-4">
+                <h3 class="text-lg font-semibold mb-2">Card Title 3</h3>
+                <p class="text-gray-600 mb-4">This is a brief description of the card content.</p>
+                <button class="px-4 py-2 rounded-md font-medium bg-blue-600 text-white hover:bg-blue-700 transition">Read More</button>
+            </div>
+        </div> 
+    </div>
+    <br><br>  
+    <!--statistics Cards-->
+    <h2 class="text-lg font-semibold mb-2 mx-12">Statistics Cards</h2>
+    <div class="mx-12 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Card 1 -->
+         <div class="bg-white p-5 rounded-lg shadow-md">
+           <div class="flex items-center justify-between">
+             <p class="text-gray-500 text-sm">Total Sales</p>
+             <span class="text-green-600 text-sm font-medium">
+             <i class="fas fa-arrow-up"></i> 15%
+             </span>
+           </div>
+           <h3 class="text-2xl font-bold mt-2">$24,500</h3>
+           <p class="text-gray-400 text-xs mt-1">Compared to last month</p>
+        </div>
+        <!-- Card 2 -->
+         <div class="bg-white p-5 rounded-lg shadow-md">
+           <p class="text-gray-500 text-sm">Daily Visitors</p>
+           <h3 class="text-2xl font-bold mt-2">1,200</h3>
+           <div class="flex gap-4 mt-3 text-sm">
+                <span class="text-green-600 font-medium">
+                    <i class="fas fa-arrow-up"></i>High: 1k
+                </span>
+                <span class="text-red-600">
+                  <i class="fas fa-arrow-down"></i> Low: 980
+                </span>
+           </div>
+         </div>
+
+        <!-- Card 3 -->
+           <div class="bg-white p-5 rounded-lg shadow-md border-l-4 border-red-500">
+              <p class="text-gray-500 text-sm">System Errors</p>
+              <h3 class="text-2xl font-bold text-red-600 mt-2">14</h3>
+              <p class="text-red-500 text-sm mt-1">
+                 <i class="fas fa-exclamation-circle"></i> Needs attention
+             </p>
+            </div>
+
+        <!-- Card 4 -->
+         <div class="bg-white p-5 rounded-lg shadow-md">
+           <div class="flex justify-between items-center">
+              <p class="text-gray-500 text-sm">Completion</p>
+               <span class="text-blue-600 text-sm font-medium">72%</span>
+           </div>
+
+            <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
+            <div class="bg-blue-600 h-2 rounded-full" style="width: 72%"></div>
+            </div>
+
+          </div>
+
+          <!--card 5-->
+          <div class="bg-green-100 p-5 rounded-lg shadow flex items-center justify-between">
+            <div>
+                <h3 class="text-2xl font-bold mt-2">350</h3>
+                <p class="text-gray-500 text-sm">New Users</p>  
+            </div>
+            <i class="fas fa-user-plus text-4xl text-green-600"></i>
+          </div>
+            <!--card 6-->
+            <div class="bg-white p-5 rounded-lg shadow-md flex items-center justify-between">
+                <div class="w-12 h-12 rounded bg-pink-100 flex items-center justify-center">
+                    <i class="fas fa-comments text-pink-500"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mt-2">1,250</h3>
+                    <p class="text-gray-500 text-sm">Comments</p>
+                </div>
+            </div>
+            <!--card 7-->
+            <div class="bg-white rounded shadow flex overflow-hidden">
+                 <div class="w-16 bg-orange-500 flex items-center justify-center">
+                   <i class="fas fa-users text-white text-xl"></i>
+                 </div>
+            <div class="p-4">
+             <p class="text-gray-500 text-sm">New Users</p>
+             <h3 class="text-xl font-bold">1,22,356</h3>
+            </div>           
+         </div>
+         <!--card 8-->
+         <div class="bg-white rounded shadow overflow-hidden">
+          <div class="flex">
+        <div class="w-16 bg-teal-500 flex items-center justify-center">
+        <i class="fas fa-shopping-cart text-white text-xl"></i>
+        </div>
+           <div class="p-4 w-full">
+             <p class="text-gray-500 text-sm">New Orders</p>
+              <h3 class="text-xl font-bold">4,65,879</h3>
+            <div class="mt-2 w-full h-1 bg-gray-200 rounded">
+               <div class="h-1 bg-teal-500 rounded w-3/4"></div>
+            </div>
+        </div>
+         </div>
+        </div>
+        <!--card 9-->
+          <div class="bg-pink-500 text-white p-5 rounded shadow flex items-center justify-between">
+          <div>
+          <p class="text-sm opacity-90">Total Profit</p>
+          <h3 class="text-2xl font-bold">5.6 M</h3>
+           </div>
+           <i class="fas fa-tag text-3xl opacity-80"></i>
+           </div>
+    </div>
+  
+         <!--Profile Card--> 
+         
+            <br><br>
+            <h2 class="text-lg font-semibold mb-4 px-12">Profile Cards</h2>
+             <div class="mx-12 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="mx-12 flex justify-center">
+              <div class="bg-white rounded-lg shadow-md w-80 p-6">
+                <div class="flex flex-col items-center">
+                  <img class="w-32 h-32 rounded-full mb-4" src="assets/images/photo-1633332755192-727a05c4013d.jpeg" alt="Profile Picture">
+                  <h3 class="text-xl font-semibold mb-1">John Doe</h3>
+                  <p class="text-gray-600 mb-4">Web Developer</p>
+                  <div class="flex space-x-4">
+                    <button class="px-4 py-2 rounded-md font-medium bg-blue-600 text-white hover:bg-blue-700 transition">Follow</button>
+                    <button class="px-4 py-2 rounded-md font-medium border border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white transition">Message</button>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            
+              <!-- Profile Card 2 -->
+               <div class="bg-white rounded-lg shadow overflow-hidden ml-6">
+            <div class="h-24 bg-gradient-to-r from-blue-500 to-purple-500"></div>
+
+           <div class="text-center -mt-10 p-4">
+                <img src="assets/images/photo-1633332755192-727a05c4013d.jpeg" class="w-20 h-20 rounded-full border-4 border-white mx-auto">
+              <h3 class="font-semibold mt-2">Mr John Doe</h3>
+              <p class="text-gray-500 text-sm">Product Manager</p>
+                </div>
+          </div>
+          <!-- Profile Card 3-->
+               <div class="bg-gray-900 text-white p-6 rounded-lg shadow">
+               <img src="assets/images/photo-1633332755192-727a05c4013d.jpeg" class="w-16 h-16 rounded-full mb-3">
+             <h3 class="font-semibold">Hassan R.</h3>
+                 <p class="text-gray-400 text-sm mb-4">DevOps Engineer</p>
+             <button class="w-full py-2 bg-blue-600 rounded text-sm">View Profile</button>
+              </div>
+          <!-- Profile Card 4 -->
+           <div class="bg-white p-5 rounded-lg shadow  w-96 h-40">
+           <div class="flex items-center gap-4 mb-4 ">
+           <img src="assets/images/photo-1633332755192-727a05c4013d.jpeg" class="w-14 h-14 rounded-full">
+              <div>
+         <h3 class="font-semibold">Usman Ali</h3>
+          <p class="text-gray-500 text-sm">Marketing Lead</p>
+          </div>
+         </div>
+
+            <div class="flex justify-between text-center text-sm">
+             <div>
+              <h4 class="font-bold">1.2K</h4>
+              <p class="text-gray-500">Followers</p>
+             </div>
+            <div>
+            <h4 class="font-bold">320</h4>
+            <p class="text-gray-500">Posts</p>
+             </div>
+             <div>
+              <h4 class="font-bold">89</h4>
+              <p class="text-gray-500">Likes</p>
+            </div>
+            </div>
+            </div>
+
+            <!-- Profile Card 5 -->
+             <div class="bg-white p-4 ml-4 rounded-lg shadow flex items-center justify-between w-96 h-20">
+              <div class="flex items-center gap-3">
+              <img src="assets/images/photo-1633332755192-727a05c4013d.jpeg" class="w-12 h-12 rounded-full">
+                <div>
+               <h3 class="font-semibold text-sm">Fatima Zahra</h3>
+               <p class="text-gray-500 text-xs">Content Writer</p>
+                  </div>
+              </div>
+
+              <button class="text-blue-600 text-sm">View</button>
+             </div>
+             <!-- Profile Card 6 -->
+             <div class="bg-white p-4 rounded-lg shadow flex items-center ml-8 gap-4 w-96 h-25">
+             <img src="assets/images/photo-1633332755192-727a05c4013d.jpeg" class="w-16 h-16 rounded-full">
+
+             <div>
+                <h3 class="font-semibold">Ali Raza</h3>
+              <p class="text-gray-500 text-sm">Backend Developer</p>
+               <span class="text-green-600 text-xs">
+                <i class="fas fa-circle"></i> Online
+               </span>
+              </div>
+              </div>
+            </div>
+        <!--Pricing Cards Section -->
+        <br><br>
+        <h2 class="text-lg font-semibold mb-6 px-12">Pricing Cards</h2>
+         <div class="px-12 grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+
+         <!-- Basic -->
+          <div class="bg-white rounded-lg shadow p-6 text-center">
+          <h3 class="font-semibold text-lg mb-2">Basic</h3>
+           <p class="text-gray-500 text-sm mb-4">For individuals</p>
+            <h2 class="text-3xl font-bold mb-4">$9<span class="text-sm font-normal">/mo</span></h2>
+
+              <ul class="text-sm text-gray-600 space-y-2 mb-6">
+              <li><i class="fa-solid fa-check text-green-600"></i> 5 Projects</li>
+              <li><i class="fa-solid fa-check text-green-600"></i> 10GB Storage</li>
+              <li><i class="fa-solid fa-check text-green-600"></i> Email Support</li>
+              </ul>
+
+             <button class="w-full py-2 border rounded-md">Choose Plan</button>
+              </div>
+
+             <!-- Popular -->
+             <div class="bg-white rounded-lg shadow-lg p-6 text-center border-2 border-blue-600 relative">
+               <span class="absolute top-3 right-3 bg-blue-600 text-white text-xs px-2 py-1 rounded">Popular</span>
+
+               <h3 class="font-semibold text-lg mb-2">Pro</h3>
+               <p class="text-gray-500 text-sm mb-4">Best for teams</p>
+               <h2 class="text-3xl font-bold mb-4">$29<span class="text-sm font-normal">/mo</span></h2>
+
+               <ul class="text-sm text-gray-600 space-y-2 mb-6">
+              <li><i class="fa-solid fa-check text-green-600"></i> Unlimited Projects</li>
+              <li><i class="fa-solid fa-check text-green-600"></i> 100GB Storage</li>
+              <li><i class="fa-solid fa-check text-green-600"></i> Priority Support</li>
+               </ul>
+
+              <button class="w-full py-2 bg-blue-600 text-white rounded-md">Choose Plan</button>
+            </div>
+
+           <!-- Enterprise -->
+              <div class="bg-white rounded-lg shadow p-6 text-center">
+             <h3 class="font-semibold text-lg mb-2">Enterprise</h3>
+             <p class="text-gray-500 text-sm mb-4">Large companies</p>
+             <h2 class="text-3xl font-bold mb-4">$99<span class="text-sm font-normal">/mo</span></h2>
+
+                <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                   <li><i class="fa-solid fa-check text-green-600"></i> Custom Solutions</li>
+                   <li><i class="fa-solid fa-check text-green-600"></i> Unlimited Storage</li>
+                    <li><i class="fa-solid fa-check text-green-600"></i> Dedicated Support</li>
+                </ul>
+
+             <button class="w-full py-2 border rounded-md">Contact Sales</button>
+             </div>
+            </div>
+            <!--Pricing Cards Section -->
+
+         <div class="px-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div class="bg-blue-600 text-white p-6 rounded-lg">
+            <h3 class="font-semibold mb-2">Basic</h3>
+            <h2 class="text-3xl font-bold mb-4">$19</h2>
+            <button class="w-full py-2 bg-white text-blue-600 rounded">Buy Now</button>
+         </div>
+
+         <div class="bg-green-600 text-white p-6 rounded-lg">
+          <h3 class="font-semibold mb-2">Standard</h3>
+          <h2 class="text-3xl font-bold mb-4">$49</h2>
+          <button class="w-full py-2 bg-white text-green-600 rounded">Buy Now</button>
+         </div>
+
+        <div class="bg-purple-600 text-white p-6 rounded-lg">
+           <h3 class="font-semibold mb-2">Ultimate</h3>
+         <h2 class="text-3xl font-bold mb-4">$99</h2>
+         <button class="w-full py-2 bg-white text-purple-600 rounded">Buy Now</button>
+          </div>
+
+         </div>
+         <!--Testimonials Section -->
+         <h2 class="text-lg font-semibold mb-6 px-12">Testimonial Cards</h2>
+         <div class="px-12 grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+
+  <div class="bg-white p-6 rounded-lg shadow">
+    <p class="text-gray-600 text-sm mb-4">
+      “This product has completely changed the way we work. Highly recommended!”
+    </p>
+    <div class="flex items-center gap-3">
+      <img src="assets/images/photo-1633332755192-727a05c4013d.jpeg"
+           class="w-10 h-10 rounded-full">
+      <div>
+        <h4 class="font-semibold text-sm">John Doe</h4>
+        <p class="text-xs text-gray-500">UI Designer</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg shadow">
+    <p class="text-gray-600 text-sm mb-4">
+      “Clean UI, fast performance, and amazing support team.”
+    </p>
+    <div class="flex items-center gap-3">
+      <img src="assets/images/photo-1633332755192-727a05c4013d.jpeg"
+           class="w-10 h-10 rounded-full">
+      <div>
+        <h4 class="font-semibold text-sm">Fatima Zahra</h4>
+        <p class="text-xs text-gray-500">Product Manager</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg shadow">
+    <p class="text-gray-600 text-sm mb-4">
+      “Exactly what we needed for our dashboard project.”
+    </p>
+    <div class="flex items-center gap-3">
+      <img src="assets/images/photo-1633332755192-727a05c4013d.jpeg"
+           class="w-10 h-10 rounded-full">
+      <div>
+        <h4 class="font-semibold text-sm">Ali Raza</h4>
+        <p class="text-xs text-gray-500">Backend Developer</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="px-12 grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+
+  <div class="bg-white p-6 rounded-lg shadow">
+    <div class="flex mb-2 text-yellow-400">
+     <div class="flex mb-2 text-yellow-400 text-sm">
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+</div>
+    </div>
+    <p class="text-gray-600 text-sm mb-4">
+      “Very intuitive design and easy to customize.”
+    </p>
+    <h4 class="font-semibold text-sm">Usman Ali</h4>
+    <p class="text-xs text-gray-500">Marketing Lead</p>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg shadow">
+    <div class="flex mb-2 text-yellow-400">
+     <div class="flex mb-2 text-yellow-400 text-sm">
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+</div>
+    </div>
+    <p class="text-gray-600 text-sm mb-4">
+      “Great value for money. Will use again.”
+    </p>
+    <h4 class="font-semibold text-sm">Hassan R.</h4>
+    <p class="text-xs text-gray-500">DevOps Engineer</p>
+  </div>
+
+</div>
+       <!--Blog /news card section--->
+       <br><br>
+       <h2 class="text-lg font-semibold mb-6 px-12">Blog / News Cards</h2>
+       <div class="px-12 grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+    <img src="assets/images/3.jpg" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <span class="text-xs text-blue-600 font-medium">Technology</span>
+      <h3 class="font-semibold mt-2">Top UI Trends in 2025</h3>
+      <p class="text-sm text-gray-600 mt-1">
+        Discover the latest UI trends shaping modern web apps.
+      </p>
+      <button class="text-blue-600 text-sm mt-3">Read More →</button>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-lg shadow overflow-hidden">
+    <img src="assets/images/2.jpg" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <span class="text-xs text-green-600 font-medium">Design</span>
+      <h3 class="font-semibold mt-2">Why UX Matters</h3>
+      <p class="text-sm text-gray-600 mt-1">
+        User experience plays a vital role in product success.
+      </p>
+      <button class="text-green-600 text-sm mt-3">Read More →</button>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-lg shadow overflow-hidden">
+    <img src="assets/images/1.jpg" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <span class="text-xs text-purple-600 font-medium">Business</span>
+      <h3 class="font-semibold mt-2">Startup Growth Hacks</h3>
+      <p class="text-sm text-gray-600 mt-1">
+        Simple strategies to scale your startup fast.
+      </p>
+      <button class="text-purple-600 text-sm mt-3">Read More →</button>
+    </div>
+  </div>
+         </div>
+
+         <!--Cards 2-->
+        <div class="px-12 grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+
+  <div class="bg-white p-5 rounded-lg shadow">
+    <h3 class="font-semibold mb-2">Design Systems Explained</h3>
+    <p class="text-sm text-gray-600 mb-4">
+      Learn how scalable design systems improve consistency.
+    </p>
+
+    <div class="flex items-center justify-between text-xs text-gray-500">
+      <div class="flex items-center gap-2">
+        <img src="assets/images/photo-1633332755192-727a05c4013d.jpeg"
+             class="w-6 h-6 rounded-full">
+        <span>Fatima Zahra</span>
+      </div>
+      <span>12 Dec 2025</span>
+    </div>
+  </div>
+
+  <div class="bg-white p-5 rounded-lg shadow">
+    <h3 class="font-semibold mb-2">API Performance Tips</h3>
+    <p class="text-sm text-gray-600 mb-4">
+      Optimize backend APIs for speed and reliability.
+    </p>
+
+    <div class="flex items-center justify-between text-xs text-gray-500">
+      <div class="flex items-center gap-2">
+        <img src="assets/images/photo-1633332755192-727a05c4013d.jpeg"
+             class="w-6 h-6 rounded-full">
+        <span>Ali Raza</span>
+      </div>
+      <span>08 Dec 2025</span>
+    </div>
+  </div>
+
+</div>
+      <!--Feature Service Card-->
+        <br><br>
+        <h2 class="text-lg font-semibold mb-6 px-12">Feature / Service Cards</h2>
+        <div class="px-12 grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
+
+  <div class="bg-white p-6 rounded-lg shadow text-center">
+    <div class="w-12 h-12 mx-auto bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+      <i class="fas fa-layer-group"></i>
+    </div>
+    <h3 class="font-semibold mb-2">Modular Design</h3>
+    <p class="text-sm text-gray-600">
+      Reusable and scalable UI components.
+    </p>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg shadow text-center">
+    <div class="w-12 h-12 mx-auto bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
+      <i class="fas fa-shield-alt"></i>
+    </div>
+    <h3 class="font-semibold mb-2">Secure</h3>
+    <p class="text-sm text-gray-600">
+      Industry-standard security practices.
+    </p>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg shadow text-center">
+    <div class="w-12 h-12 mx-auto bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mb-4">
+      <i class="fas fa-rocket"></i>
+    </div>
+    <h3 class="font-semibold mb-2">Fast Performance</h3>
+    <p class="text-sm text-gray-600">
+      Optimized for speed and efficiency.
+    </p>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg shadow text-center">
+    <div class="w-12 h-12 mx-auto bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mb-4">
+      <i class="fas fa-headset"></i>
+    </div>
+    <h3 class="font-semibold mb-2">24/7 Support</h3>
+    <p class="text-sm text-gray-600">
+      Always available when you need help.
+    </p>
+  </div>
+
+</div>
+<!---Cards 2-->
+ <div class="px-12 grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+
+  <div class="bg-white p-6 rounded-lg shadow flex gap-4">
+    <div class="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center">
+      <i class="fas fa-code"></i>
+    </div>
+    <div>
+      <h3 class="font-semibold mb-1">Clean Code</h3>
+      <p class="text-sm text-gray-600">
+        Easy to maintain and extend codebase.
+      </p>
+    </div>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg shadow flex gap-4">
+    <div class="w-12 h-12 bg-green-600 text-white rounded-lg flex items-center justify-center">
+      <i class="fas fa-mobile-alt"></i>
+    </div>
+    <div>
+      <h3 class="font-semibold mb-1">Responsive</h3>
+      <p class="text-sm text-gray-600">
+        Works perfectly on all devices.
+      </p>
+    </div>
+  </div>
+
+</div>
+<!--Cards 3-->
+<div class="px-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+  <div class="bg-gradient-to-br from-blue-600 to-purple-600 text-white p-6 rounded-lg shadow">
+    <i class="fas fa-crown text-2xl mb-4"></i>
+    <h3 class="font-semibold text-lg mb-2">Premium Access</h3>
+    <p class="text-sm text-blue-100 mb-4">
+      Unlock advanced features and priority support.
+    </p>
+    <button class="text-sm underline">Learn More</button>
+  </div>
+
+  <div class="bg-gray-900 text-white p-6 rounded-lg shadow">
+    <i class="fas fa-bolt text-2xl mb-4"></i>
+    <h3 class="font-semibold text-lg mb-2">Instant Setup</h3>
+    <p class="text-sm text-gray-400 mb-4">
+      Get started in less than 5 minutes.
+    </p>
+    <button class="text-sm underline">Learn More</button>
+  </div>
+
+  <div class="bg-white border-2 border-dashed p-6 rounded-lg text-center">
+    <h3 class="font-semibold mb-2">Custom Feature</h3>
+    <p class="text-sm text-gray-600 mb-4">
+      Tailored solutions for your business.
+    </p>
+    <button class="text-blue-600 text-sm">Contact Us</button>
+  </div>
+
+</div>
+<!---CTA -->
+<br><br>    
+<h2 class="text-lg font-semibold mb-6 px-12">CTA / Action Cards</h2>
+<div class="px-12 grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+
+  <div class="bg-blue-50 border border-blue-200 p-6 rounded-lg flex items-center justify-between">
+    <div>
+      <h3 class="font-semibold text-blue-800">Upgrade Your Plan</h3>
+      <p class="text-sm text-blue-700">
+        Get access to premium features instantly.
+      </p>
+    </div>
+    <button class="px-4 py-2 bg-blue-600 text-white rounded-md">
+      Upgrade
+    </button>
+  </div>
+
+  <div class="bg-green-50 border border-green-200 p-6 rounded-lg flex items-center justify-between">
+    <div>
+      <h3 class="font-semibold text-green-800">Start Free Trial</h3>
+      <p class="text-sm text-green-700">
+        Try our product free for 14 days.
+      </p>
+    </div>
+    <button class="px-4 py-2 bg-green-600 text-white rounded-md">
+      Start Now
+    </button>
+  </div>
+
+</div>
+
+<div class="px-12 grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+
+  <div class="bg-white p-6 rounded-lg shadow text-center">
+    <div class="w-14 h-14 mx-auto bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+      <i class="fas fa-download"></i>
+    </div>
+    <h3 class="font-semibold mb-2">Download App</h3>
+    <p class="text-sm text-gray-600 mb-4">
+      Get the mobile app for better experience.
+    </p>
+    <button class="text-blue-600 text-sm">Download →</button>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg shadow text-center">
+    <div class="w-14 h-14 mx-auto bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mb-4">
+      <i class="fas fa-user-plus"></i>
+    </div>
+    <h3 class="font-semibold mb-2">Join Community</h3>
+    <p class="text-sm text-gray-600 mb-4">
+      Be part of our growing developer network.
+    </p>
+    <button class="text-purple-600 text-sm">Join →</button>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg shadow text-center">
+    <div class="w-14 h-14 mx-auto bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mb-4">
+      <i class="fas fa-envelope"></i>
+    </div>
+    <h3 class="font-semibold mb-2">Contact Sales</h3>
+    <p class="text-sm text-gray-600 mb-4">
+      Talk to our sales team for custom plans.
+    </p>
+    <button class="text-orange-600 text-sm">Contact →</button>
+  </div>
+
+</div>
+<div class="px-12">
+
+  <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg flex flex-col md:flex-row items-center justify-between">
+    <div>
+      <h3 class="text-xl font-semibold mb-2">
+        Ready to build your next project?
+      </h3>
+      <p class="text-sm text-blue-100">
+        Start using our Tailwind UI components today.
+      </p>
+    </div>
+
+    <div class="mt-4 md:mt-0 flex gap-3">
+      <button class="px-5 py-2 bg-white text-blue-600 rounded-md">
+        Get Started
+      </button>
+      <button class="px-5 py-2 border border-white rounded-md">
+        View Docs
+      </button>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+    
+</body>
+</html>
