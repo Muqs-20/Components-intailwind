@@ -8,9 +8,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-gray-200 min-h-screen">
-
-
-
+<a href="index.html" class="inline-block mt-6 px-4 py-2 rounded-md font-medium bg-purple-600 text-white hover:bg-purple-700 transition mx-12"> Back to Buttons Component</a>
+<br>
+<a href="Navbar.html" class="inline-block mt-6 px-4 py-2 rounded-md font-medium bg-purple-600 text-white hover:bg-purple-700 transition mx-12"> Go to Nav Component</a>
+<br>
+<a href="pagination.html" class="inline-block mt-6 px-4 py-2 rounded-md font-medium bg-purple-600 text-white hover:bg-purple-700 transition mx-12"> Go to Pagination Component</a>
     <!--Cards -->
     <br><br>
     <!--Cards with Images and text-->
@@ -641,7 +643,7 @@
 </div>
 <div class="px-12">
 
-  <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg flex flex-col md:flex-row items-center justify-between">
+  <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg flex flex-col md:flex-row items-center justify-between mb-4 ">
     <div>
       <h3 class="text-xl font-semibold mb-2">
         Ready to build your next project?
@@ -659,6 +661,246 @@
         View Docs
       </button>
     </div>
+  </div>
+
+</div>
+<!--Content Blog-->
+<h2 class="text-lg font-semibold mb-6 px-12">Content / Blog Cards</h2>
+<div class="px-12 grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+
+  <div class="bg-white rounded-lg shadow overflow-hidden">
+    <img src="assets/images/3.jpg" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <span class="text-xs text-blue-600 font-medium">UI DESIGN</span>
+      <h3 class="font-semibold mt-2">
+        How to build clean dashboards
+      </h3>
+      <p class="text-sm text-gray-600 mt-1">
+        Practical tips for modern UI layouts.
+      </p>
+    </div>
+  </div>
+    <div class="bg-white rounded-lg shadow overflow-hidden">
+    <img src="assets/images/3.jpg" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <h3 class="font-semibold">
+        Tailwind for beginners
+      </h3>
+      <p class="text-sm text-gray-600 mt-1 mb-4">
+        Learn utility-first CSS step by step.
+      </p>
+
+      <div class="flex items-center gap-3">
+        <img src="assets/images/photo-1633332755192-727a05c4013d.jpeg" class="w-8 h-8 rounded-full">
+        <div>
+          <p class="text-xs font-medium">Ali Raza</p>
+          <p class="text-xs text-gray-500">2 days ago</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-50 border p-5 rounded-lg h-45 ">
+    <span class="text-xs text-purple-600 font-medium">
+      PRODUCTIVITY
+    </span>
+    <h3 class="font-semibold mt-2">
+      Writing better UI copy
+    </h3>
+    <p class="text-sm text-gray-600 mt-2">
+      Small text changes that improve conversions.
+    </p>
+    <button class="text-sm text-purple-600 mt-3">
+      Read more →
+    </button>
+  </div>
+
+</div>
+<div class="px-12 mb-10">
+
+  <div class="bg-white rounded-lg shadow flex overflow-hidden">
+    <img src="assets/images/3.jpg" class="w-40 object-cover">
+    <div class="p-4">
+      <h3 class="font-semibold">
+        Dashboard UX mistakes
+      </h3>
+      <p class="text-sm text-gray-600 mt-1 mb-3">
+        Common layout errors and how to fix them.
+      </p>
+      <span class="text-xs text-gray-500">
+        5 min read
+      </span>
+    </div>
+  </div>
+
+</div>
+<div class="px-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+  <div class="bg-white p-5 rounded-lg shadow">
+    <div class="flex gap-2 mb-3">
+      <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">
+        Tailwind
+      </span>
+      <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
+        UI
+      </span>
+    </div>
+
+    <h3 class="font-semibold">
+      Utility-first design system
+    </h3>
+    <p class="text-sm text-gray-600 mt-2">
+      Build scalable components using Tailwind.
+    </p>
+  </div>
+
+</div>
+
+
+<!--Notifications cards Section-->
+
+<br><br>
+
+<h2 class="text-lg font-semibold mb-4 px-12">Notification Cards</h2>
+
+<div class="mx-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+  <!-- Notification 1 -->
+  <div class="bg-white p-5 rounded-lg shadow flex gap-4">
+    <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-100 text-blue-600">
+      <i class="fa-solid fa-bell"></i>
+    </div>
+
+    <div>
+      <h4 class="font-semibold text-sm">New Alert</h4>
+      <p class="text-gray-500 text-xs mt-1">
+        You have a new system notification.
+      </p>
+      <span class="text-xs text-gray-400">2 minutes ago</span>
+    </div>
+  </div>
+
+  <!-- Notification 2 -->
+  <div class="bg-white p-5 rounded-lg shadow flex gap-4">
+    <div class="w-10 h-10 flex items-center justify-center rounded-full bg-green-100 text-green-600">
+      <i class="fa-solid fa-check"></i>
+    </div>
+
+    <div>
+      <h4 class="font-semibold text-sm">Task Completed</h4>
+      <p class="text-gray-500 text-xs mt-1">
+        Your task has been completed successfully.
+      </p>
+      <span class="text-xs text-gray-400">10 minutes ago</span>
+    </div>
+  </div>
+
+  <!-- Notification 3 -->
+  <div class="bg-white p-5 rounded-lg shadow flex gap-4">
+    <div class="w-10 h-10 flex items-center justify-center rounded-full bg-yellow-100 text-yellow-600">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+    </div>
+
+    <div>
+      <h4 class="font-semibold text-sm">Warning</h4>
+      <p class="text-gray-500 text-xs mt-1">
+        Please update your profile details.
+      </p>
+      <span class="text-xs text-gray-400">1 hour ago</span>
+    </div>
+  </div>
+
+  <!-- Notification 4 -->
+  <div class="bg-white p-5 rounded-lg shadow flex gap-4">
+    <div class="w-10 h-10 flex items-center justify-center rounded-full bg-red-100 text-red-600">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+
+    <div>
+      <h4 class="font-semibold text-sm">Error</h4>
+      <p class="text-gray-500 text-xs mt-1">
+        Payment failed. Try again.
+      </p>
+      <span class="text-xs text-gray-400">Yesterday</span>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!--File Cards Section--->
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-14 my-8">
+
+  <!-- File Card -->
+  <div class="bg-white p-5 rounded-lg shadow hover:shadow-lg transition">
+    <div class="flex items-center gap-4">
+      <i class="fas fa-file-pdf text-red-500 text-3xl"></i>
+      <div>
+        <h4 class="font-semibold text-sm">Project Report</h4>
+        <p class="text-xs text-gray-500">PDF • 2.4 MB</p>
+      </div>
+    </div>
+    <button class="mt-4 text-sm text-blue-600">Download</button>
+  </div>
+
+  <div class="bg-white p-5 rounded-lg shadow hover:shadow-lg transition">
+    <div class="flex items-center gap-4">
+      <i class="fas fa-file-excel text-green-600 text-3xl"></i>
+      <div>
+        <h4 class="font-semibold text-sm">Finance Sheet</h4>
+        <p class="text-xs text-gray-500">XLS • 1.1 MB</p>
+      </div>
+    </div>
+    <button class="mt-4 text-sm text-blue-600">Download</button>
+  </div>
+
+</div>
+<!--user Activity cards Section-->
+<br><br><div class="grid grid-cols-1 md:grid-cols-2 gap-4  mx-14">
+
+  <div class="bg-white p-5 rounded-lg shadow flex gap-4">
+    <i class="fas fa-user-check text-green-500 text-xl mt-1"></i>
+    <div>
+      <h4 class="font-semibold text-sm">New Login</h4>
+      <p class="text-xs text-gray-500">Ali Raza logged in</p>
+      <span class="text-xs text-gray-400">2 minutes ago</span>
+    </div>
+  </div>
+
+  <div class="bg-white p-5 rounded-lg shadow flex gap-4">
+    <i class="fas fa-upload text-blue-500 text-xl mt-1"></i>
+    <div>
+      <h4 class="font-semibold text-sm">File Uploaded</h4>
+      <p class="text-xs text-gray-500">Report.pdf uploaded</p>
+      <span class="text-xs text-gray-400">10 minutes ago</span>
+    </div>
+  </div>
+
+</div>
+<!--Hover cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-12">
+
+  <div class="bg-white p-6 rounded-lg shadow 
+              hover:bg-blue-600 hover:text-white 
+              transition duration-300 group">
+    <i class="fas fa-bell text-2xl text-blue-600 
+              group-hover:text-white mb-3"></i>
+    <h4 class="font-semibold mb-1">Notifications</h4>
+    <p class="text-sm text-gray-500 group-hover:text-blue-100">
+      Manage alerts & updates
+    </p>
+  </div>
+
+  <div class="bg-white p-6 rounded-lg shadow 
+              hover:bg-green-600 hover:text-white 
+              transition duration-300 group">
+    <i class="fas fa-users text-2xl text-green-600 
+              group-hover:text-white mb-3"></i>
+    <h4 class="font-semibold mb-1">Users</h4>
+    <p class="text-sm text-gray-500 group-hover:text-green-100">
+      View active users
+    </p>
   </div>
 
 </div>
